@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://msanchezdevera.github.io/">
   <title>Mariano Sánchez de Vera — Senior Software Engineer</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -66,35 +66,58 @@
       <div class="section-heading reveal">
         <p class="kicker">01 · Selected work</p>
         <h2 id="work-title">Built to prove the point.</h2>
-        <p>Public code, measurable results and the engineering decisions behind them.</p>
+        <p>A live fintech product, measurable results and the engineering decisions behind the work.</p>
       </div>
 
-      <article class="project project-featured reveal">
-        <a class="project-media" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer" aria-label="Open MRI Radiomics Agent on GitHub">
-          <img src="assets/mri-radiomics.png" alt="GLCM texture comparison across four brain MRI classes" width="1600" height="800">
-          <span class="media-label">Research demo · not a diagnostic tool</span>
-        </a>
-        <div class="project-copy">
-          <p class="project-number">01 / Applied AI agent</p>
-          <h3>MRI Radiomics Agent</h3>
-          <p>A tool-using agent over an interpretable brain-MRI texture model. The custom harness includes typed tool calls, memory, on-demand skills, guardrails, per-step traces and CI-gated evals.</p>
-          <div class="project-metrics">
-            <div><strong>90.1%</strong><span>4-class accuracy</span></div>
-            <div><strong>30</strong><span>eval scenarios</span></div>
-            <div><strong>20</strong><span>automated tests</span></div>
+      <article class="project project-featured project-product reveal">
+        <div class="product-visual" aria-label="Asesor Financiero AI product overview">
+          <div class="product-brand" aria-hidden="true">AF<span>/</span>AI</div>
+          <div class="product-flow" aria-hidden="true">
+            <span>Statements</span><b>→</b><span>Categories</span><b>→</b><span>Insights</span>
           </div>
-          <ul class="tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>scikit-learn</li><li>LLM agents</li><li>Docker</li></ul>
-          <a class="project-link" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer">View source and architecture <span>↗</span></a>
+          <a class="product-live" href="https://play.google.com/store/apps/details?id=com.asesorfinanciero.ia" target="_blank" rel="noreferrer"><span class="status-dot"></span> Live on Google Play ↗</a>
+        </div>
+        <div class="project-copy">
+          <p class="project-number">01 / Founder & product</p>
+          <h3>Asesor Financiero AI</h3>
+          <p>A personal-finance product that turns bank and card statements into clear spending insights and personalized savings recommendations.</p>
+          <div class="product-points">
+            <p><strong>From raw statements to clarity.</strong><br>Hybrid categorization, spending visualizations and actionable recommendations in one flow.</p>
+            <p><strong>Built as a real product.</strong><br>Mobile and web experiences, free and Pro plans, with Android live and iOS in progress.</p>
+          </div>
+          <ul class="tags" aria-label="Product areas"><li>AI</li><li>Mobile</li><li>Fintech</li><li>Product</li></ul>
+          <div class="dual-links">
+            <a class="project-link" href="https://asesorfinancieroai.com" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.asesorfinanciero.ia" target="_blank" rel="noreferrer">Google Play <span>↗</span></a>
+          </div>
         </div>
       </article>
 
       <div class="project-grid">
         <article class="project-card reveal">
+          <a class="card-media" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer" aria-label="Open MRI Radiomics Agent on GitHub">
+            <img src="assets/mri-radiomics.png" alt="GLCM texture comparison across four brain MRI classes" width="1600" height="800">
+          </a>
+          <div class="card-body">
+            <p class="project-number">02 / Applied AI agent</p>
+            <h3>MRI Radiomics Agent</h3>
+            <p>A tool-using agent over an interpretable brain-MRI texture model, with typed tools, memory, skills, guardrails, traces and CI-gated evals.</p>
+            <div class="project-metrics compact-project-metrics">
+              <div><strong>90.1%</strong><span>accuracy</span></div>
+              <div><strong>30</strong><span>eval scenarios</span></div>
+              <div><strong>20</strong><span>tests</span></div>
+            </div>
+            <ul class="tags"><li>Python</li><li>FastAPI</li><li>LLM agents</li></ul>
+            <a class="project-link" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer">View architecture <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
           <a class="card-media" href="https://github.com/msanchezdevera/chess-vision-pipeline" target="_blank" rel="noreferrer">
             <img src="assets/chess-vision.gif" alt="Computer vision pipeline detecting chess pieces, the board and player poses" loading="lazy">
           </a>
           <div class="card-body">
-            <p class="project-number">02 / Computer vision</p>
+            <p class="project-number">03 / Computer vision</p>
             <h3>Chess Vision Pipeline</h3>
             <p>Three YOLOv8 models in one video flow: custom piece detection, board segmentation and player pose, with a live inventory overlay.</p>
             <div class="compact-metric"><strong>0.896</strong><span>mAP50</span></div>
@@ -103,20 +126,6 @@
           </div>
         </article>
 
-        <article class="project-card project-card-text reveal">
-          <div class="card-mark" aria-hidden="true">AF<span>/</span>AI</div>
-          <div class="card-body">
-            <p class="project-number">03 / Founder & product</p>
-            <h3>Asesor Financiero AI</h3>
-            <p>A personal-finance product that turns bank and card statements into clear spending insights and personalized savings recommendations.</p>
-            <p class="live-label"><span class="status-dot"></span> Live on Google Play</p>
-            <ul class="tags"><li>AI</li><li>Mobile</li><li>Fintech</li><li>Product</li></ul>
-            <div class="dual-links">
-              <a class="project-link" href="https://asesorfinancieroai.com" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
-              <a class="project-link" href="https://play.google.com/store/apps/details?id=com.asesorfinanciero.ia" target="_blank" rel="noreferrer">Google Play <span>↗</span></a>
-            </div>
-          </div>
-        </article>
       </div>
 
       <div class="more-work reveal">
