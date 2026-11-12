@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mariano Sánchez de Vera — Senior Software Engineer specializing in distributed backend systems and applied AI.">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta property="og:title" content="Mariano Sánchez de Vera — Senior Software Engineer">
+  <meta property="og:description" content="A decade building high-availability backends. Now building applied AI systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://msanchezdevera.github.io/">
+  <title>Mariano Sánchez de Vera — Senior Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">MS<span>/</span>DV</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+      <a class="button button-small" href="mailto:msanchezdevera@gmail.com">Let’s talk</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Buenos Aires · Open to new opportunities</p>
+        <h1 id="hero-title">I build reliable systems.<br><em>Now I make them intelligent.</em></h1>
+        <p class="hero-lede">Senior Software Engineer with 10+ years of experience in high-availability backend platforms, distributed systems and fintech — now focused on production-grade Applied AI.</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/msanchezdevera" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="text-link" href="https://www.linkedin.com/in/mariano-sanchez-de-vera-bastone-43216b63/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Technical profile snapshot">
+        <div class="signal-grid" aria-hidden="true"></div>
+        <div class="terminal-card">
+          <div class="terminal-top"><span></span><span></span><span></span><small>profile.ts</small></div>
+          <pre><code><span class="muted">const</span> mariano = {
+  focus: [
+    <span class="accent">"distributed systems"</span>,
+    <span class="accent">"applied AI"</span>
+  ],
+  languages: [<span class="accent">"Java"</span>, <span class="accent">"Go"</span>, <span class="accent">"Python"</span>],
+  mindset: <span class="accent">"ship, measure, improve"</span>
+};</code></pre>
+        </div>
+        <div class="metric metric-a"><strong>10+</strong><span>years in production</span></div>
+        <div class="metric metric-b"><strong>30/30</strong><span>agent evals in CI</span></div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Professional highlights">
+      <p>Backend systems at</p>
+      <div><strong>Mercado Pago</strong><strong>Paxos</strong><strong>Ueno Bank</strong><strong>Despegar</strong></div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="kicker">01 · Selected work</p>
+        <h2 id="work-title">Built to prove the point.</h2>
+        <p>Public code, measurable results and the engineering decisions behind them.</p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <a class="project-media" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer" aria-label="Open MRI Radiomics Agent on GitHub">
+          <img src="assets/mri-radiomics.png" alt="GLCM texture comparison across four brain MRI classes" width="1600" height="800">
+          <span class="media-label">Research demo · not a diagnostic tool</span>
+        </a>
+        <div class="project-copy">
+          <p class="project-number">01 / Applied AI agent</p>
+          <h3>MRI Radiomics Agent</h3>
+          <p>A tool-using agent over an interpretable brain-MRI texture model. The custom harness includes typed tool calls, memory, on-demand skills, guardrails, per-step traces and CI-gated evals.</p>
+          <div class="project-metrics">
+            <div><strong>90.1%</strong><span>4-class accuracy</span></div>
+            <div><strong>30</strong><span>eval scenarios</span></div>
+            <div><strong>20</strong><span>automated tests</span></div>
+          </div>
+          <ul class="tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>scikit-learn</li><li>LLM agents</li><li>Docker</li></ul>
+          <a class="project-link" href="https://github.com/msanchezdevera/mri-glcm-radiomics" target="_blank" rel="noreferrer">View source and architecture <span>↗</span></a>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="card-media" href="https://github.com/msanchezdevera/chess-vision-pipeline" target="_blank" rel="noreferrer">
+            <img src="assets/chess-vision.gif" alt="Computer vision pipeline detecting chess pieces, the board and player poses" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="project-number">02 / Computer vision</p>
+            <h3>Chess Vision Pipeline</h3>
+            <p>Three YOLOv8 models in one video flow: custom piece detection, board segmentation and player pose, with a live inventory overlay.</p>
+            <div class="compact-metric"><strong>0.896</strong><span>mAP50</span></div>
+            <ul class="tags"><li>YOLOv8</li><li>OpenCV</li><li>Python</li></ul>
+            <a class="project-link" href="https://github.com/msanchezdevera/chess-vision-pipeline" target="_blank" rel="noreferrer">View project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-text reveal">
+          <div class="card-mark" aria-hidden="true">AF<span>/</span>AI</div>
+          <div class="card-body">
+            <p class="project-number">03 / Founder & product</p>
+            <h3>Asesor Financiero AI</h3>
+            <p>A personal-finance product that turns bank and card statements into clear spending insights and personalized savings recommendations.</p>
+            <p class="live-label"><span class="status-dot"></span> Live on Google Play</p>
+            <ul class="tags"><li>AI</li><li>Mobile</li><li>Fintech</li><li>Product</li></ul>
+            <div class="dual-links">
+              <a class="project-link" href="https://asesorfinancieroai.com" target="_blank" rel="noreferrer">Visit website <span>↗</span></a>
+              <a class="project-link" href="https://play.google.com/store/apps/details?id=com.asesorfinanciero.ia" target="_blank" rel="noreferrer">Google Play <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-work reveal">
+        <div><p class="project-number">More engineering work</p><h3>Data, graphs and predictive analytics.</h3></div>
+        <ul>
+          <li><span>Ethereum Transaction Network</span><small>BigQuery · NetworkX · graph analytics</small></li>
+          <li><a href="https://github.com/msanchezdevera/supertienda-analytics-hub" target="_blank" rel="noreferrer">Supertienda Analytics Hub ↗</a><small>Streamlit · predictive what-if simulator</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="kicker">02 · Experience</p>
+        <h2 id="experience-title">A decade in systems that cannot stop.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><time>2025 — now</time><div><h3>Senior Software Developer <span>· ITTI</span></h3><p>Loyalty and monetary benefits for Ueno Bank. Event-driven services in Java and Go across AWS, DynamoDB, Kubernetes and Kong.</p><ul class="tags"><li>Java</li><li>Go</li><li>AWS</li><li>SQS/SNS</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2020 — 2025</time><div><h3>Senior Backend Developer <span>· AgileEngine for Paxos</span></h3><p>Asset-conversion and crypto-trading services. Improved local development, automated delivery, expanded tests and migrated observability.</p><ul class="tags"><li>Go</li><li>Java</li><li>Kafka</li><li>gRPC</li><li>FIX</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2020</time><div><h3>Senior Software Engineer <span>· Mercado Libre</span></h3><p>Recurring-payments charging platform for Mercado Pago.</p><ul class="tags"><li>Java</li><li>MySQL</li><li>Redis</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2013 — 2020</time><div><h3>Software Developer <span>· Despegar</span></h3><p>Delivery automation, anti-crawling systems and hotel checkout and after-sales platforms.</p><ul class="tags"><li>Java</li><li>Scala</li><li>AWS</li><li>Kubernetes</li></ul></div></article>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about-main reveal">
+        <p class="kicker">03 · About</p>
+        <h2 id="about-title">Backend depth.<br>AI curiosity.<br>Product instinct.</h2>
+        <p>I work best where reliability, ambiguity and scale meet. My background is in distributed backend systems; my current work adds model evaluation, agent architecture and computer vision to that foundation.</p>
+      </div>
+      <div class="about-details reveal">
+        <div><h3>Engineering</h3><p>Java · Go · Python<br>Distributed systems · APIs<br>Kafka · PostgreSQL · Redis<br>AWS · Docker · Kubernetes</p></div>
+        <div><h3>Applied AI</h3><p>LLM agents · tool use<br>Memory · skills · evals<br>scikit-learn · TensorFlow<br>YOLOv8 · OpenCV</p></div>
+        <div><h3>Education & research</h3><p><strong>B.S. AI Engineering</strong><br>Palermo University · in progress</p><p><strong>B.S. Systems Engineering</strong><br>UTN · 2015</p><p class="award">Santander Academic Prize 2025</p></div>
+      </div>
+    </section>
+
+    <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+      <p class="kicker">Let’s build something that matters.</p>
+      <h2 id="contact-title">Need a senior engineer who can bridge dependable backends and applied AI?</h2>
+      <a class="contact-email" href="mailto:msanchezdevera@gmail.com">msanchezdevera@gmail.com <span>↗</span></a>
+      <div class="contact-links"><a href="https://github.com/msanchezdevera" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mariano-sanchez-de-vera-bastone-43216b63/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year">2026</span> Mariano Sánchez de Vera</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
